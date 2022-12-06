@@ -55,5 +55,7 @@ trips_clean_dt
 cleaned_df <- trips_clean_dt %>% filter(ride_duration_hrs < 24) %>% filter(ride_duration_mins > 1)
 cleaned_df
 
+install.packages("readr")
+write_csv(cleaned_df, "cleaned_df.csv")
 
 
